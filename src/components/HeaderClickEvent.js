@@ -14,8 +14,9 @@ let name = ['Chandigarh','Hyderabad','Banglore','Kolkata','Mumbai','Delhi NCR','
 let name2 =['Nashik','Udupi-Manipal','Kochi','patna','Coimbatore','Indore','Guwahati','Calicut','Jaipur','Lucknow','Bhopal','Nagpur','Mysore','Raipur','Vijayawada','Bhubaneswar','Siliguri','Trichy','Vizag','Ahmedabad'];
 
 let HeaderClickEvent = () =>{
-    let [value,setValue] = useState("")
-    console.log(value)
+    let [inputText,setValue] = useState("")
+    let [result,setResult] = useState(false)
+    console.log(inputText)
     return(
         <div className="header-click-event-section">
             <div className="header-content-sec-1">
@@ -31,7 +32,7 @@ let HeaderClickEvent = () =>{
                         <ul className="header-click-list-item-1">
                             {name.map((value,i) =>{
                                 return(
-                                    <li className="list-item-1 " key={i}>
+                                    <li className={!inputText?'list-item-1':value.toLowerCase().includes(inputText.toLowerCase())?"list-item-1":"list-item-1 not-selected"} key={i}>
                                         <img className="header-click-image" src={images[i]} alt="" />
                                         {value}
                                     </li>
@@ -44,7 +45,7 @@ let HeaderClickEvent = () =>{
                     <ul className="header-click-list-item-2">
                             {name2.map((value,i) =>{
                                 return (
-                                    <li className="list-item-2" key={i}>
+                                    <li className={!inputText?'list-item-2':value.toLowerCase().includes(inputText.toLowerCase())?"list-item-2":"list-item-2 not-selected"}  key={i}>
                                         {value}
                                     </li>
                                 )
