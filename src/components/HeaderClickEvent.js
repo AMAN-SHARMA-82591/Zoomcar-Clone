@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import one from '../Images/chandigarh.png'
 import two from '../Images/hyderabad.png'
 import three from '../Images/banglore.png'
@@ -22,10 +22,13 @@ let HeaderClickEvent = ({forwardRef,setSelect,setClick}) =>{
         setResult(event.target.id),
         setCheck(event.type)
     ]
-    if(result !== false){
-        setSelect(name[result])
-        setClick(false)
-    }
+    useEffect(() => {
+        if(result !== false){
+            setSelect(name[result])
+            setClick(false)
+        }
+    },[result,check,inputText,setClick,setSelect])
+   
 
     return(
         <div ref={forwardRef}  className="header-click-event-section">
