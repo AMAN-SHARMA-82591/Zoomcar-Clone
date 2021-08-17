@@ -8,6 +8,7 @@ import HeaderClickEvent from './HeaderClickEvent';
 
 let Header = () => {
     let [click,setClick] = useState(false)
+    let [select,setSelect] = useState('Select State')
     let childRef = useRef(null)
     useEffect(() =>{
         let handler = (event) =>{
@@ -26,13 +27,13 @@ let Header = () => {
 
     return(
         <div  className="header-section">
-        {click ?  <HeaderClickEvent forwardRef={childRef} /> : ''}
+        {click ?  <HeaderClickEvent forwardRef={childRef} setClick={setClick} setSelect={setSelect}/> : ''}
             <img className="header-main-image" src={PersonPointing} alt="" />
             <div className="header-text-section">
                 <h1>DRIVE IN  A SANITIZED ZOOMCAR</h1>
                 <div   className="header-cont-item-1">
                     <p>Self Drive Car Rental in</p>
-                    <button onClick={() => setClick(!click)} type="submit">Select State <ArrowDown style={{fontSize:34}} /></button>
+                    <button onClick={() => setClick(!click)} type="submit">{select} <ArrowDown style={{fontSize:34}} /></button>
                     
                 </div>
                 <div className="header-cont-item-2">
