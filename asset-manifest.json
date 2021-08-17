@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/AMAN-SHARMA-82591/Zoomcar-Clone.git/static/css/main.ea590f96.chunk.css",
+    "main.js": "/AMAN-SHARMA-82591/Zoomcar-Clone.git/static/js/main.43e06ca2.chunk.js",
+    "main.js.map": "/AMAN-SHARMA-82591/Zoomcar-Clone.git/static/js/main.43e06ca2.chunk.js.map",
+    "runtime-main.js": "/AMAN-SHARMA-82591/Zoomcar-Clone.git/static/js/runtime-main.ab5a1236.js",
+    "runtime-main.js.map": "/AMAN-SHARMA-82591/Zoomcar-Clone.git/static/js/runtime-main.ab5a1236.js.map",
+    "static/js/2.e8d4160f.chunk.js": "/AMAN-SHARMA-82591/Zoomcar-Clone.git/static/js/2.e8d4160f.chunk.js",
+    "static/js/2.e8d4160f.chunk.js.map": "/AMAN-SHARMA-82591/Zoomcar-Clone.git/static/js/2.e8d4160f.chunk.js.map",
+    "static/js/3.0284fd34.chunk.js": "/AMAN-SHARMA-82591/Zoomcar-Clone.git/static/js/3.0284fd34.chunk.js",
+    "static/js/3.0284fd34.chunk.js.map": "/AMAN-SHARMA-82591/Zoomcar-Clone.git/static/js/3.0284fd34.chunk.js.map",
+    "index.html": "/AMAN-SHARMA-82591/Zoomcar-Clone.git/index.html",
+    "static/css/main.ea590f96.chunk.css.map": "/AMAN-SHARMA-82591/Zoomcar-Clone.git/static/css/main.ea590f96.chunk.css.map",
+    "static/js/2.e8d4160f.chunk.js.LICENSE.txt": "/AMAN-SHARMA-82591/Zoomcar-Clone.git/static/js/2.e8d4160f.chunk.js.LICENSE.txt",
+    "static/media/amigo.188a6fe2.jpg": "/AMAN-SHARMA-82591/Zoomcar-Clone.git/static/media/amigo.188a6fe2.jpg",
+    "static/media/bike10.efd21c5e.jpeg": "/AMAN-SHARMA-82591/Zoomcar-Clone.git/static/media/bike10.efd21c5e.jpeg",
+    "static/media/zoomcar.b304aac8.png": "/AMAN-SHARMA-82591/Zoomcar-Clone.git/static/media/zoomcar.b304aac8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ab5a1236.js",
+    "static/js/2.e8d4160f.chunk.js",
+    "static/css/main.ea590f96.chunk.css",
+    "static/js/main.43e06ca2.chunk.js"
+  ]
+}
