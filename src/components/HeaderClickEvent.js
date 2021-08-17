@@ -16,7 +16,7 @@ let name2 =['Nashik','Udupi-Manipal','Kochi','patna','Coimbatore','Indore','Guwa
 
 
 
-let HeaderClickEvent = ({props}) =>{
+let HeaderClickEvent = ({forwardRef}) =>{
     let [inputText,setValue] = useState("")
     let [result,setResult] = useState(false)
     let [check,setCheck] = useState(false)
@@ -24,10 +24,14 @@ let HeaderClickEvent = ({props}) =>{
         setResult(event.target.id),
         setCheck(event.type)
     ]
-
+       if(result <= 8){
+           console.log(name[result])
+       }else if(result > 8){
+           console.log(name2[result-9])
+       }
     return(
-        <div  className="header-click-event-section">
-            <div className="header-content-sec-1">
+        <div ref={forwardRef}  className="header-click-event-section">
+            <div  className="header-content-sec-1">
                 <div className="header-click-main-heading">SELECT YOUR CITY</div>
                 <div className="header-click-event-input">
                     <SearchIcon style={{color:"grey"}}/>

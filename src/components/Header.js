@@ -1,17 +1,32 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect, useRef } from 'react'
 import RightArrow from '@material-ui/icons/ArrowForwardIos';
 import ArrowDown from '@material-ui/icons/KeyboardArrowDown';
 import PersonPointing from '../Images/bike10.jpeg';
 import HeaderClickEvent from './HeaderClickEvent';
+// import { ContactSupportOutlined } from '@material-ui/icons';
 
 
 let Header = () => {
     let [click,setClick] = useState(false)
-   
+    let childRef = useRef(null)
+    useEffect(() =>{
+        let handler = (event) =>{
+            if(childRef.current === null){
+                setClick(false)
+            }
+            else if(!childRef.current.contains(event.target)){
+                setClick(false)
+            }
+        }
+        document.addEventListener('mousedown', handler)
+        return () => {
+            document.removeEventListener('mousedown', handler)
+        }
+    },[])
 
     return(
         <div  className="header-section">
-        {click ?  <HeaderClickEvent /> : null}
+        {click ?  <HeaderClickEvent forwardRef={childRef} /> : ''}
             <img className="header-main-image" src={PersonPointing} alt="" />
             <div className="header-text-section">
                 <h1>DRIVE IN  A SANITIZED ZOOMCAR</h1>
@@ -29,5 +44,6 @@ let Header = () => {
             
         </div>
     )
+
 }
 export default Header
