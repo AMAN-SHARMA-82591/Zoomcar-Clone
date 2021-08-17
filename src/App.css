@@ -278,10 +278,15 @@
   cursor:pointer;
   letter-spacing:0.5px;
   text-decoration:none;
+  transition:color 0.3s ease-out;
+}
+.list-item-2:hover{
+  color:black;
 }
 .list-item-2.selected{
   position:relative;
   color:var(--selectButton);
+  margin:0px 10px 19px 0px;
   border-bottom:1px solid var(--selectButton);
 }
 .list-item-2.selected::before{
@@ -291,7 +296,7 @@
   top:0px;
   color:white;
   transform:rotateX(180deg) rotate(130deg);
-  right:0px;
+  right:5px;
   height:15px;
   background:var(--selectButton);
 }
