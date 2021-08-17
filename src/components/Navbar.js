@@ -16,8 +16,8 @@ let Navbar = () =>{
                         {navbar.map((value,i) => {
                             if(i === 1){
                               return   (
-                            <>
-                                <li key={i} className="nav-list">
+                            <div key={i}>
+                                <li className="nav-list">
                                     {value}
                                     <div className="list-item-hover">
                                         <img style={{width:"120px",height:"40px"}} alt="" src={Navbarlogo}/>
@@ -26,14 +26,14 @@ let Navbar = () =>{
                                     </div>
                                 </li>
                               
-                            </>
+                            </div>
 
                                 )
                             }
                             else if(i === 2){
                               return   (
-                            <>
-                                <li key={i} className="nav-list">
+                            <div key={i}>
+                                <li className="nav-list">
                                     {value}
                                     <div style={{left:"-130px",padding:"20px 10px"}} className="list-item-hover">
                                        <img style={{width:"120px",height:"30px"}} src={Amigo} alt=""/>
@@ -42,14 +42,14 @@ let Navbar = () =>{
                                     </div>
                                 </li>
                               
-                            </>
+                            </div>
 
                                 )
                             }
                             else if(i === 3){
                               return   (
-                            <>
-                                <li key={i} className="nav-list">
+                            <div key={i}>
+                                <li className="nav-list">
                                     {value}
                                     <div style={{left:"-140px"}} className="list-item-hover">
                                         <img style={{width:"120px",height:"40px"}} src={Navbarlogo} alt="" />
@@ -60,14 +60,14 @@ let Navbar = () =>{
                                     </div>
                                 </li>
                               
-                            </>
+                            </div>
 
                                 )
                             }
                             else if(i === 4){
                               return   (
-                            <>
-                                <li key={i} className="nav-list">
+                            <div key={i}>
+                                <li className="nav-list">
                                     {value}
                                     <div style={{width:'180px',left:"-20px"}} className="list-item-hover unique-button">
                                             <button><ShopIcon styles={{paddingRight:"20px"}}/>Google Play</button>
@@ -77,7 +77,7 @@ let Navbar = () =>{
                                     </div>
                                 </li>
                               
-                            </>
+                            </div>
 
                                 )
                                 
