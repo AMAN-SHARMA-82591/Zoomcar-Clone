@@ -2,6 +2,7 @@ import React, { useState,useEffect, useRef } from 'react'
 import RightArrow from '@material-ui/icons/ArrowForwardIos';
 import ArrowDown from '@material-ui/icons/KeyboardArrowDown';
 import PersonPointing from '../Images/bike10.jpeg';
+import '../App.css'
 import HeaderClickEvent from './HeaderClickEvent';
 // import { ContactSupportOutlined } from '@material-ui/icons';
 

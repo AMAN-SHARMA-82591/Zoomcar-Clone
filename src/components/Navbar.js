@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbarlogo from '../Images/zoomcar.png'
+import  '../App.css'
 import Amigo from '../Images/amigo.jpg'
 import ShopIcon from '@material-ui/icons/Shop';
 import AppleIcon from '@material-ui/icons/Apple';

@@ -7,6 +7,7 @@ import five from '../Images/mumbai.png'
 import six from '../Images/delhi.png'
 import seven from '../Images/chennai.png'
 import eight from '../Images/vadodra.png'
+import '../App.css'
 import nine from '../Images/pune.png'
 import SearchIcon from '@material-ui/icons/Search'
 let images = [one,two,three, four,five,six,seven,eight,nine]
