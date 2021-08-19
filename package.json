@@ -1,7 +1,7 @@
 {
   "name": "zoomcar",
   "version": "0.1.0",
-  "homepage": "https://github.com/AMAN-SHARMA-82591/Zoomcar-Clone.git",
+  "homepage": "https://aman-sharma-82591.github.io/Zoomcar-Clone/",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.12.3",
